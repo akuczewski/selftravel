@@ -7,13 +7,14 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
+      margin: 0;
+      padding: 0;
       background: #f9f9f9;
       color: #333;
       text-align: center;
     }
     header {
-      background: #2196f3;
+      background: #4caf50;
       color: white;
       padding: 40px 20px;
     }
@@ -21,10 +22,34 @@
       margin: 0;
       font-size: 2.5rem;
     }
+    h2 {
+      margin-top: 40px;
+      font-size: 2rem;
+      color: #4caf50;
+    }
     p {
       font-size: 1.2rem;
-      max-width: 600px;
+      max-width: 700px;
       margin: 20px auto;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      max-width: 700px;
+      margin: 20px auto;
+      font-size: 1.1rem;
+      text-align: left;
+    }
+    ul li {
+      margin: 12px 0;
+      padding-left: 1.2em;
+      position: relative;
+    }
+    ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #4caf50;
     }
     footer {
       margin-top: 40px;
@@ -41,8 +66,17 @@
   </header>
 
   <main>
-    <p>We're building a smart travel assistant that helps you discover and plan amazing trips using real-time flight data, local attractions, and personalized AI recommendations.</p>
-    <p>This MVP is currently in progress. Stay tuned!</p>
+    <p>We're building an intelligent assistant that helps you plan smart, personalized trips — combining real-time data and AI magic.</p>
+
+    <h2>Planned Features:</h2>
+    <ul>
+      <li>Real-time flight search with up-to-date prices</li>
+      <li>Attraction discovery based on location and personal preferences</li>
+      <li>Accommodation recommendations aligned with your itinerary</li>
+      <li>Local tips, travel rules, safety advice & cultural insights</li>
+    </ul>
+
+    <p>The MVP is in progress. Stay tuned for the first version soon!</p>
   </main>
 
   <footer>
