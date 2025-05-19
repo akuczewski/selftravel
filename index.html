@@ -4,83 +4,156 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Self-Travel AI – Smart Travel Planner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    :root {
+      --green: #4caf50;
+      --green-dark: #388e3c;
+      --gray: #f5f5f5;
+    }
+
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #e8f5e9, #ffffff);
       color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, var(--green), var(--green-dark));
+      color: white;
+      padding: 80px 20px;
       text-align: center;
     }
-    header {
-      background: #4caf50;
-      color: white;
-      padding: 40px 20px;
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
     }
-    h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    h2 {
-      margin-top: 40px;
-      font-size: 2rem;
-      color: #4caf50;
-    }
-    p {
+
+    header p {
       font-size: 1.2rem;
-      max-width: 700px;
-      margin: 20px auto;
     }
-    ul {
-      list-style: none;
-      padding: 0;
-      max-width: 700px;
-      margin: 20px auto;
-      font-size: 1.1rem;
-      text-align: left;
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
     }
-    ul li {
-      margin: 12px 0;
-      padding-left: 1.2em;
-      position: relative;
-    }
-    ul li::before {
-      content: "✔";
-      position: absolute;
-      left: 0;
-      color: #4caf50;
-    }
-    footer {
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
       margin-top: 40px;
-      padding: 20px;
+    }
+
+    .feature {
+      background: var(--gray);
+      padding: 30px;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature i {
+      font-size: 2rem;
+      color: var(--green);
+      margin-bottom: 15px;
+      display: block;
+    }
+
+    .cta {
+      margin-top: 50px;
+    }
+
+    .cta button {
+      background: var(--green);
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .cta button:hover {
+      background: var(--green-dark);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
       font-size: 0.9rem;
       color: #777;
     }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .feature {
+        padding: 20px;
+      }
+    }
   </style>
+  <script src="https://kit.fontawesome.com/a4f01fd2d2.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
   <header>
     <h1>Self-Travel AI</h1>
     <p>Your AI-powered travel planner is under development.</p>
   </header>
 
-  <main>
-    <p>We're building an intelligent assistant that helps you plan smart, personalized trips — combining real-time data and AI magic.</p>
+  <section class="section">
+    <h2>What Self-Travel AI will do for you</h2>
+    <div class="features">
+      <div class="feature">
+        <i class="fas fa-plane-departure"></i>
+        <h3>Flight Search</h3>
+        <p>Find real-time flights with accurate prices from top travel platforms.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-map-marked-alt"></i>
+        <h3>Attraction Discovery</h3>
+        <p>Explore things to do based on your location and travel preferences.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-bed"></i>
+        <h3>Accommodation Finder</h3>
+        <p>Get smart hotel suggestions matching your itinerary and flights.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-lightbulb"></i>
+        <h3>Local Insights</h3>
+        <p>Receive AI-generated tips, rules, and curiosities about your destination.</p>
+      </div>
+    </div>
 
-    <h2>Planned Features:</h2>
-    <ul>
-      <li>Real-time flight search with up-to-date prices</li>
-      <li>Attraction discovery based on location and personal preferences</li>
-      <li>Accommodation recommendations aligned with your itinerary</li>
-      <li>Local tips, travel rules, safety advice & cultural insights</li>
-    </ul>
-
-    <p>The MVP is in progress. Stay tuned for the first version soon!</p>
-  </main>
+    <div class="cta">
+      <p style="margin-top: 40px; font-weight: 600;">Want to stay updated?</p>
+      <button onclick="alert('Subscribe function coming soon!')">Notify Me</button>
+    </div>
+  </section>
 
   <footer>
-    &copy; 2025 Self-Travel AI | MVP in progress
+    &copy; 2025 Self-Travel AI · MVP in progress
   </footer>
+
 </body>
 </html>
