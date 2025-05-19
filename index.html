@@ -3,65 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Self-Travel AI – Smart Travel Planner</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>Self-Travel AI – Smart Travel Planning</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a2e0c6ad65.js" crossorigin="anonymous"></script>
   <style>
-    :root {
-      --green: #4caf50;
-      --green-dark: #388e3c;
-      --gray: #f5f5f5;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
+      margin: 0;
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(to bottom right, #e8f5e9, #ffffff);
-      color: #333;
-      line-height: 1.6;
+      background-color: #f3f4f6;
+      color: #1f2937;
     }
 
     header {
-      background: linear-gradient(to right, var(--green), var(--green-dark));
-      color: white;
-      padding: 80px 20px;
+      background-color: #10b981; /* zielony */
+      padding: 2rem;
       text-align: center;
+      color: white;
     }
 
     header h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
+      margin: 0;
+      font-size: 2.5rem;
     }
 
     header p {
+      margin-top: 0.5rem;
       font-size: 1.2rem;
-    }
-
-    .section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-      text-align: center;
     }
 
     .features {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
     }
 
     .feature {
-      background: var(--gray);
-      padding: 30px;
-      border-radius: 12px;
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      text-align: center;
       transition: transform 0.3s ease;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
 
     .feature:hover {
@@ -69,90 +54,66 @@
     }
 
     .feature i {
-      font-size: 2rem;
-      color: var(--green);
-      margin-bottom: 15px;
-      display: block;
+      font-size: 2.5rem;
+      color: #10b981;
+      margin-bottom: 1rem;
     }
 
-    .cta {
-      margin-top: 50px;
-    }
-
-    .cta button {
-      background: var(--green);
-      color: white;
-      border: none;
-      padding: 15px 30px;
-      font-size: 1rem;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    .cta button:hover {
-      background: var(--green-dark);
+    .feature h3 {
+      margin: 0.5rem 0;
+      font-size: 1.25rem;
     }
 
     footer {
       text-align: center;
-      padding: 30px 20px;
+      padding: 2rem;
       font-size: 0.9rem;
-      color: #777;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      .feature {
-        padding: 20px;
-      }
+      color: #6b7280;
     }
   </style>
-  <script src="https://kit.fontawesome.com/a4f01fd2d2.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
   <header>
     <h1>Self-Travel AI</h1>
-    <p>Your AI-powered travel planner is under development.</p>
+    <p>Your smart AI-powered travel planner. MVP in development 🚀</p>
   </header>
 
-  <section class="section">
-    <h2>What Self-Travel AI will do for you</h2>
-    <div class="features">
-      <div class="feature">
-        <i class="fas fa-plane-departure"></i>
-        <h3>Flight Search</h3>
-        <p>Find real-time flights with accurate prices from top travel platforms.</p>
-      </div>
-      <div class="feature">
-        <i class="fas fa-map-marked-alt"></i>
-        <h3>Attraction Discovery</h3>
-        <p>Explore things to do based on your location and travel preferences.</p>
-      </div>
-      <div class="feature">
-        <i class="fas fa-bed"></i>
-        <h3>Accommodation Finder</h3>
-        <p>Get smart hotel suggestions matching your itinerary and flights.</p>
-      </div>
-      <div class="feature">
-        <i class="fas fa-lightbulb"></i>
-        <h3>Local Insights</h3>
-        <p>Receive AI-generated tips, rules, and curiosities about your destination.</p>
-      </div>
+  <section class="features">
+    <div class="feature">
+      <i class="fas fa-plane-departure"></i>
+      <h3>Flight Search</h3>
+      <p>Find real-time flights with accurate prices from top travel platforms.</p>
     </div>
-
-    <div class="cta">
-      <p style="margin-top: 40px; font-weight: 600;">Want to stay updated?</p>
-      <button onclick="alert('Subscribe function coming soon!')">Notify Me</button>
+    <div class="feature">
+      <i class="fas fa-map-marked-alt"></i>
+      <h3>Attraction Discovery</h3>
+      <p>Explore things to do based on your location and travel preferences.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-bed"></i>
+      <h3>Accommodation Finder</h3>
+      <p>Get smart hotel suggestions matching your itinerary and flights.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-lightbulb"></i>
+      <h3>Local Insights</h3>
+      <p>Receive AI-generated tips, rules, and curiosities about your destination.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-route"></i>
+      <h3>Smart Itinerary</h3>
+      <p>Automatically generate a full plan with flights, transport, places to stay and visit.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-user-cog"></i>
+      <h3>AI Personalization</h3>
+      <p>Your travel plan adapts to your style: solo, family, slow, fast, or luxury travel.</p>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 Self-Travel AI · MVP in progress
+    &copy; 2025 Self-Travel AI. MVP in progress.
   </footer>
 
 </body>
